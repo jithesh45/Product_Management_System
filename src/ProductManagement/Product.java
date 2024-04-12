@@ -105,7 +105,7 @@ public class Product
 					{
 						System.out.println("Enter the Product Name for Update : ");
 						pname=sc.next();
-						PreparedStatement ps=con.prepareStatement("update productdetails set name=? where pid=?");
+						PreparedStatement ps=con.prepareStatement("update productdetails set pname=? where pid=?");
 						ps.setString(1,pname);
 						ps.setInt(2,pid);
 						result=ps.executeUpdate();
